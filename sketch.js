@@ -468,7 +468,7 @@ function draw() {
     text("Press Space to play Again", (displayWidth/2) - 260, (displayHeight/2 + 100));
     text("Press H to go back to Menu", (displayWidth/2) - 260, (displayHeight/2 + 150));
     play.visible = true;
-    gameMusic.stop();
+    //gameMusic.stop();
     start();
     menu();
     
@@ -524,9 +524,9 @@ function start() {
 
   if (keyWentDown("space")) {
 
-    gameMusic.stop();
+    //gameMusic.stop();
     //menuMusic.stop();
-    gameMusic.play();
+    //gameMusic.play();
   
 
     tomato_barrel.visible = true;
@@ -631,7 +631,7 @@ function start() {
     if (game_number === 1) {
 
       setInterval(timeIt, 1000);
-      menuMusic.stop();
+      //menuMusic.stop();
 
     }
 
@@ -655,8 +655,8 @@ function menu() {
     control.visible = true;
     play.visible = true;
     controls.visible = false;
-    menuMusic.stop();
-    menuMusic.play();
+    //menuMusic.stop();
+    //menuMusic.play();
   }
 
 }
@@ -706,7 +706,7 @@ function timeIt() {
     cfarmland2.visible = false;
     bfarmland1.visible = false;
     bfarmland2.visible = false;
-    menuMusic.play();
+    //menuMusic.play();
 
   }
 
